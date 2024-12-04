@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .hea {
+            color: rgba(255, 0, 0, 0.265);
+            font-size: 70px;
+            text-align: center;
+        }
+        .calc, .calca, .tor, .ope {
+            display: flex;
+            background-color: rgb(122, 61, 61);
+            justify-content: center;
+        }
+        .calc > div, .calca > div, .tor > div, .ope > div {
+            background-color: rgba(245, 245, 220, 0.482);
+            margin: 10px;
+            padding: 40px;
+            font-size: 30px;
+            cursor: pointer;
+            user-select: none;
+        }
+        .display {
+            display: flex; 
+            justify-content: center;
+            font-size: 40px;
+            background-color: lightgrey;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p class="hea"><b>Calculator</b></p>
+    <div class="display" id="display">0</div>
+    <div class="calc">
+        <div onclick="appendToDisplay('1')">1</div>
+        <div onclick="appendToDisplay('2')">2</div>
+        <div onclick="appendToDisplay('3')">3</div>
+    </div>
+    <div class="calca">
+        <div onclick="appendToDisplay('4')">4</div>
+        <div onclick="appendToDisplay('5')">5</div>
+        <div onclick="appendToDisplay('6')">6</div>
+    </div>
+    <div class="tor">
+        <div onclick="appendToDisplay('7')">7</div>
+        <div onclick="appendToDisplay('8')">8</div>
+        <div onclick="appendToDisplay('9')">9</div>
+    </div>
+    <div class="ope">
+        <div onclick="appendToDisplay('0')">0</div>
+        <div onclick="appendToDisplay('+')">+</div>
+        <div onclick="appendToDisplay('-')">-</div>
+        <div onclick="calculate()">=</div>
+        <div onclick="clearDisplay()">C</div>
+    </div>
+    <script src="operator.js"></script>
+</body>
+</html>

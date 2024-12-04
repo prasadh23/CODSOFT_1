@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 1rem;
+        }
+        section {
+            margin: 2rem 0;
+        }
+        section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skill, .project {
+            flex: 1 1 calc(33.333% - 1rem);
+            margin: 0.5rem;
+            background-color: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>B M Siva Prasadh</h1>
+        <p>Web Developer & Designer</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <img src="https://www.aiscribbles.com/img/variant/large-preview/33593/?v=054a92" alt="Ujjwal" width="500px" height="500px">
+            <h3>Hello! I'm Siva Prasadh, a passionate web developer with experience in creating dynamic and responsive websites. I love solving problems and building things that make people's lives easier.</h3>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">C Programming</div>
+                <div class="skill"> C++ Programming</div>
+                <div class="skill">Git</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Project One</h3>
+                    <p>My First Project is on HTML. I have made many Websites using HTML and CSS.My first website is Agri Shop:Formers online Selling Website.<br>Now I am learning Javascript for the validation of the Form</p>
+                    <img src="project1.jpg" alt="Project One">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Resume</h2>
+            <a href="resume.pdf" download>Download My Resume</a>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>Email: SivaPrasadh@gmail.com</p>
+            <p>Phone: 123-456-7890</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Siva Prasadh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
